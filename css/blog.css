@@ -97,6 +97,7 @@
 
 .con .txt h2 {
     color: rgb(53, 75, 104);
+    margin-left: 64px;
 }
 
 .pri {
@@ -105,7 +106,7 @@
     float: right;
     clear: right;
     position: fixed;
-    margin-top: -650px;
+    margin-top: -676px;
     margin-left: 1100px;
     animation: priload 2s linear;
 }
@@ -151,9 +152,9 @@
 }
 
 .pri .tag {
-    height: 200px;
+    height: 160px;
     background-color: rgb(229, 239, 243);
-    margin-top: 50px;
+    margin-top: 36px;
     border-radius: 20px;
     box-shadow: 0 0 8px rgba(39, 69, 88, 0.6);
 }
@@ -173,6 +174,32 @@
     color: rgb(109, 166, 168);
 }
 
+.pri .link {
+    height: 160px;
+    background-color: rgb(229, 239, 243);
+    margin-top: 36px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(39, 69, 88, 0.6);
+}
+
+.link a{
+    text-decoration: none;
+}
+
+.link h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(56, 117, 158);
+    font-weight: bolder;
+}
+
+.link a span{
+    margin-left: 48px;
+    margin-top: 24px;
+    font-size:18px;
+    word-wrap: break-word;
+    color: rgb(114, 182, 202);
+}
 
 @keyframes c1load {
     0% {

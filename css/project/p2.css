@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.article {
+    width: 810px;
+    margin: 108px auto 20px;
+    padding: 10px 20px;
+    background-color: rgba(103, 161, 176, 0.600);
+    border: 1px solid #ccc;
+    color: rgb(33, 81, 93);
+    font-size: 21px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.article a {
+    /* text-decoration: none; */
+    color: rgb(33, 81, 93);
+    font-size: 22px;
+}
+
+.link {
+    text-align: center;
+}
+
+@keyframes imgload1 {
+    0% {
+        opacity: 0;
+        margin-top: 300px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 170px;
+    }
+}
