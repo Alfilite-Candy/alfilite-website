@@ -1,38 +1,44 @@
 @charset "utf-8";
-body{
+
+body {
     margin: 0;
     padding: 0;
     background-image: url("../image/background.jpg");
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-::-webkit-scrollbar{
+.article {
+    flex: 1;
+}
+
+.foot {
+    background-color: rgba(84, 132, 161, 0.8);
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+.foot p {
+    line-height: 10px;
+    color: rgb(28, 43, 43);
+}
+
+::-webkit-scrollbar {
     width: 8px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: rgba(91, 105, 136, 0.8);
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: rgb(194, 213, 241);
-}
-
-.foot{
-    margin-top: 0px;
-    width: 100vw;
-    height: 100px;
-    float: left;
-    clear: both;
-    text-align: center;
-    margin-bottom: 0px;
-    background-color: rgba(84, 132, 161, 0.8);
-}
-.foot p{
-    line-height: 10px;
-    color: rgb(28, 43, 43);
 }
