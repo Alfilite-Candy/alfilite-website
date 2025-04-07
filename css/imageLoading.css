@@ -1,0 +1,46 @@
+/* 图片加载优化样式 */
+.img-loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #f0f0f0 0%, #f8f8f8 50%, #f0f0f0 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* 图片淡入效果 */
+.lazy-image {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lazy-image.loaded {
+    opacity: 1;
+}
+
+/* 背景图片懒加载样式 */
+.lazy-background {
+    background: #f0f0f0;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.lazy-background.loaded {
+    background: var(--loaded-background);
+}
